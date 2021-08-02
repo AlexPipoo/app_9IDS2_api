@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('/lista_clientes',[clientesController::class,'listar_clientes'])->middleware('auth:api');
 Route::post('/guarda_clientes',[clientesController::class,'guardar_clientes']);//->middleware('auth:sanctum');
 Route::delete('/guarda_clientes',[clientesController::class,'borra_clientes']);//->middleware('auth:sanctum');
+//Mensaje para verificar diferente versions
 
 Route::post('/login',[loginController::class,'login']);
 Route::post('/logout',[loginController::class,'salir'])->middleware('auth:api');;
