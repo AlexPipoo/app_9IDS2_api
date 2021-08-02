@@ -20,6 +20,7 @@ Route::post('/lista_clientes',[clientesController::class,'listar_clientes'])->mi
 Route::post('/guarda_clientes',[clientesController::class,'guardar_clientes']);//->middleware('auth:sanctum');
 Route::delete('/guarda_clientes',[clientesController::class,'borra_clientes']);//->middleware('auth:sanctum');
 //Mensaje para verificar diferente versions
+//Mensaje para verificar que nuestra app ya esta funcionando.
 
 Route::post('/login',[loginController::class,'login']);
 Route::post('/logout',[loginController::class,'salir'])->middleware('auth:api');;
